@@ -1,0 +1,38 @@
+def addition(x,y):
+    return x + y
+def subtraction(x,y):
+    return x - y
+def multipication(x,y):
+    return x * y
+def division(x,y):
+    return x / y
+print("Choose your calculation")
+print("1, to add")
+print("2, to subtract")
+print("3, to multiply")
+print("4, to divide")
+action = input("Which operation?: ")
+if action == "1":
+    x_value = int(input("x: "))
+    y_value = int(input("y: "))
+    answer = addition(x_value, y_value)
+    print(answer)
+if action == "2":
+    x_value = int(input("x: "))
+    y_value = int(input("y: "))
+    answer = subtraction(x_value, y_value)
+    print(answer)
+if action == "3":
+    x_value = int(input("x: "))
+    y_value = int(input("y: "))
+    answer = multipication(x_value, y_value) # 29
+    print(answer)
+if action == "4":
+    x_value = int(input("x: "))
+    y_value = int(input("y: "))
+    answer = division(x_value, y_value)
+    print(answer)
+else: 
+    print("Error, No operation selected")
+
+
